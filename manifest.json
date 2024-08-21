@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube next",
+    "version": "1.0",
+    "description": "Enhances Youtube experience by adding autoplay and removing Shorts",
+    "action": {
+      "default_icon": "ytnext-logo.png",
+      "default_popup": "popup.html"
+    },
+    "host_permissions": [
+      "*://www.youtube.com/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "tabs",
+      "webNavigation",
+      "storage"
+    ]
+  }
+  

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube Next</title>
+    <style>
+        body {
+            width: 600px;
+            height: 400px;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #555;
+        }
+        button, input {
+            padding: 10px 20px;
+            font-size: 14px;
+            margin: 5px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button {
+            background-color: #292828;
+            color: white;
+            border: 1px solid; /* React logo color */
+        }
+        button:hover {
+            background-color: #1f1f1f;
+            border: 3px solid #2eb9fa;
+        }
+        button:active {
+            background-color: #1a1a1a;
+            transform: translateY(1px);
+            border: 3px solid #4ec7ff;
+        }
+        input {
+            width: 90px;
+            border: 3px solid #ccc;
+        }
+        label {
+            font-size: 14px;
+            margin: 15px 0px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>YouTube Next</h1>
+    <p>Control autoplay for YouTube Shorts videos.</p>
+    <label for="timer">Autoplay Timer (sec):</label>
+    <input type="number" id="timer" min="5" value="45" max="60">
+    <button id="saveSettings">Save Settings</button>
+    <button id="toggleAutoplay">Start Autoplay</button>
+    <script src="popup.js"></script>
+</body>
+</html>
